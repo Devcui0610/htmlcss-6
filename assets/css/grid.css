@@ -18,6 +18,10 @@
     margin-right: calc(-1 * var(--spacer) / 2);
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
+
 .col {
     flex: 1 0;
 }
