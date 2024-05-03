@@ -105,6 +105,7 @@ a {
     color: inherit;
 }
 
+.footer__copy-write,
 .fag__item--icon-wrap,
 .feedback__list-dots,
 .feedback__item--avatar,
@@ -1078,8 +1079,6 @@ a {
     position: absolute;
     bottom: -12px;
     left: 0px;
-    /* display: inline-block;
-    content: ""; */
     width: 100%;
     height: 2px;
     background: var(--title-color);
@@ -1231,4 +1230,173 @@ a {
 .fag__item--row-desc {
     opacity: 0;
     visibility: hidden;
+}
+
+/* ========[ PERSONAL ]======== */
+.personal {
+    margin-top: 110px;
+    padding-top: 50px;
+}
+
+.personal__heading {
+    width: 45.1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.personal__title {
+    color: var(--title-color);
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0px;
+}
+
+.personal__desc {
+    color: #51586a;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    margin-top: 20px;
+}
+
+.personal__link {
+    position: relative;
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+    margin-top: 30px;
+}
+
+.personal__link::after {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.personal__banner {
+    margin-top: 70px;
+}
+
+.personal__img--wrap {
+    width: 370px;
+    max-width: 100%;
+    height: 529px;
+}
+
+.personal__img {
+    width: 370px;
+    max-width: 100%;
+    height: 529px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.personal__img:hover {
+    transform: scale(1.05);
+}
+
+/* ========[ TALK-PROJECT ]======== */
+.talk-project {
+    margin-top: 90px;
+    padding-top: 50px;
+}
+
+.container-talk-project {
+    margin: 0 auto;
+    width: 1330px;
+    max-width: 100%;
+}
+
+.talk-project__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background: #fbfaff;
+    padding: 68px 0;
+    text-align: center;
+}
+
+.talk-project__title {
+    width: 48.7%;
+    color: var(--title-color);
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0px;
+    margin-top: 10px;
+}
+
+.talk-project__desc {
+    width: 48.7%;
+    color: #51586a;
+    font-size: 1.8rem;
+    line-height: 1.667;
+    margin-top: 20px;
+}
+
+.talk-project__btn {
+    margin-top: 43px;
+    z-index: 1;
+}
+
+.talk-project__deco {
+    position: absolute;
+}
+
+.talk-project__deco-1 {
+    left: 0px;
+    bottom: 0px;
+}
+
+.talk-project__deco-2 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+}
+
+.talk-project__deco-3 {
+    right: 0px;
+    top: 0px;
+}
+
+/* ========[ FOOTER ]======== */
+.footer {
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer__line {
+    display: flex;
+    margin: 0 auto;
+    width: 1429px;
+    max-width: 100%;
+    height: 1px;
+    background: rgba(12, 7, 32, 0.2);
+    margin-top: 32px;
+    margin-bottom: 18px;
+}
+
+.footer__copy--text {
+    color: #525771;
+    font-size: 1.8rem;
+    line-height: 1.667;
+    opacity: 0.6;
+    white-space: nowrap;
+}
+
+.footer__copy--text + .footer__copy--text {
+    margin-left: 515px;
 }
