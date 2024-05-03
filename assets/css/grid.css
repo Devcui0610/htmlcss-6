@@ -663,9 +663,9 @@
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    .container {
-        /* max-width: 1320px; */
-    }
+    /* .container {
+        max-width: 1320px;
+    } */
 
     .g-xxl-0 {
         --spacer: 0;
