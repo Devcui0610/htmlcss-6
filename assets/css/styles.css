@@ -31,11 +31,6 @@ button {
     border: none;
     outline: none;
 }
-
-.container {
-    padding-right: 0;
-    padding-left: 0;
-}
 /* ===[keyframe]=== */
 @keyframes spin {
     0% {
@@ -243,7 +238,6 @@ a {
 .hero {
     padding-top: 44px;
     background: var(--bg-color);
-    z-index: -3;
 }
 
 .hero__inner {
@@ -272,7 +266,9 @@ a {
     position: absolute;
     display: flex;
     bottom: 0px;
-    left: -215px;
+    /* left: -215px; */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hero__right {
@@ -644,8 +640,7 @@ a {
 
 /* ========[ PROJECT ]======== */
 .project {
-    margin-top: 90px;
-    padding-top: 50px;
+    margin-top: 140px;
     background: var(--primary-color);
 }
 
@@ -822,6 +817,7 @@ a {
 .designer__data {
     margin-top: 90px;
     width: 946px;
+    max-width: 100%;
     margin: 70px auto 0;
 }
 
@@ -875,7 +871,7 @@ a {
 .designer__video--thumb {
     display: flex;
     width: 1170px;
-    height: 628px;
+    height: auto;
     max-width: 100%;
     object-fit: cover;
 }
@@ -1266,7 +1262,7 @@ a {
     position: relative;
     display: inline-block;
     color: var(--primary-color);
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -1.28px;

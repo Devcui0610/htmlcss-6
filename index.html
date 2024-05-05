@@ -49,6 +49,9 @@
     <header class="header header-fixed">
         <div class="container-logo-nav">
             <section class="container__inner">
+                <a href="#" class="logo-mobile">
+                    <img src="./assets/images/logo-mobile.png" alt="" class="logo__img" />
+                </a>
                 <div class="container__info">
                     <a href="mailto:hi@arif.interactive">
                         <div class="container__info--wrap-icon">
@@ -61,7 +64,8 @@
                 <a href="#" class="logo">
                     <img src="./assets/images/logo.png" alt="" class="logo__img" />
                 </a>
-                <nav class="navbar">
+                <!-- Menu-PC -->
+                <nav class="navbar navbar-pc">
                     <ul class="navbar__list">
                         <li class="navbar__item">
                             <a href="#!" class="navbar__link" title="Projects">Projects</a>
@@ -77,7 +81,59 @@
                         </li>
                     </ul>
                 </nav>
+                <label for="menu-checkbox" class="toggle-menu">
+                    <div class="toggle-menu__icon-wrap">
+                        <img src="./assets/images/icon/icon-toggle.svg" alt="" class="toggle-menu__icon">
+                    </div>
+                </label>
             </section>
+        </div>
+    </header>
+    <div class="container-logo-nav">
+        <div class="header__mobile--line"></div>
+    </div>
+    <!-- TABLET / MOBILE -->
+    <header class="header-mobile">
+        <div class="container">
+            <input type="checkbox" id="menu-checkbox" class="menu-checkbox" name="" hidden>
+
+            <!-- Menu overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <div class="container__info">
+                    <a href="mailto:hi@arif.interactive">
+                        <div class="container__info--wrap-icon">
+                            <img src="./assets/images/icon/email-heart.svg" alt="" class="container__info--icon" />
+                        </div>
+                    </a>
+                    <a href="mailto:hi@arif.interactive"
+                        class="container__info--link container__info--link-tablet">hi@arif.interactive
+                    </a>
+                    <label for="menu-checkbox" class="menu-drawer__label-svg">
+                        <svg class="menu-drawer__xmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                    </label>
+                </div>
+                <div class="menu-drawer__line"></div>
+                <ul class="navbar__list navbar__list--tablet">
+                    <li class="navbar__item">
+                        <a href="#!" class="navbar__link" title="Projects">Projects</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#!" class="navbar__link" title="Journey">Journey</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#!" class="navbar__link" title="Service">Service</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#!" class="navbar__link" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -285,8 +341,8 @@
                         </div>
                     </div>
                     <div class="special__list">
-                        <div class="row row-cols-lg-3">
-                            <div class="col col-lg-4">
+                        <div class="row row-cols-lg-3 row-cols-md-2 flex-nowrap row-cols-sm-1">
+                            <div class="col col-lg-4 col-md-6 col-12">
                                 <div class="special__item wow animate__fadeInLeftBig">
                                     <div class="special__item--icon-wrap">
                                         <img src="./assets/images/icon/icon-light.png" alt=""
@@ -302,7 +358,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col col-lg-4 col-md-6 col-12">
                                 <div class="special__item wow animate__zoomIn">
                                     <div class="special__item--icon-wrap">
                                         <img src="./assets/images/icon/icon-ui-ux.png" alt=""
@@ -318,7 +374,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col col-lg-4 col-md-6 col-12">
                                 <div class="special__item wow animate__fadeInRightBig">
                                     <div class="special__item--icon-wrap">
                                         <img src="./assets/images/icon/icon-iphone.png" alt=""
@@ -336,6 +392,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="feedback__list-dots feedback__list-dots--mobile wow animate__zoomIn"
+                        data-wow-delay="1s">
+                        <div class="feedback__dot"></div>
+                        <div class="feedback__dot feedback__dot--active"></div>
+                        <div class="feedback__dot"></div>
+                    </div>
                 </section>
             </div>
         </section>
@@ -345,14 +407,14 @@
             <div class="container">
                 <section class="project__inner">
                     <div class="project__heading">
-                        <div class="row row-cols-lg-2">
-                            <div class="col col-lg-5">
+                        <div class="row row-cols-lg-2 row-cols-1">
+                            <div class="col col-lg-5 col-12">
                                 <h2 class="project__title wow animate__zoomInLeft">
                                     Take a look at <br />
                                     my recent projects
                                 </h2>
                             </div>
-                            <div class="col col-lg-6 offset-lg-1">
+                            <div class="col col-lg-6 offset-lg-1 col-12">
                                 <p class="project__desc wow animate__zoomInRight">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. In urna, non nisl
@@ -362,8 +424,8 @@
                         </div>
                     </div>
                     <section class="project__list">
-                        <div class="row row-cols-lg-2">
-                            <div class="col">
+                        <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1">
+                            <div class="col col-lg-6 col-12">
                                 <div class="project__item wow animate__zoomIn" data-wow-delay="0.5s">
                                     <div class="project__item--info">
                                         <h3 class="project__item--title">
@@ -380,9 +442,11 @@
                                     </div>
                                     <img src="./assets/images/deco-project-thumb.svg" alt=""
                                         class="project__item--deco" />
+                                    <img src="./assets/images/icon/project-deco-mobile.svg" alt=""
+                                        class="project__item--deco-mb" />
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col col-lg-6 col-12">
                                 <div class="project__item wow animate__zoomIn" data-wow-delay="0.5s">
                                     <div class="project__item--info">
                                         <h3 class="project__item--title">
@@ -399,9 +463,11 @@
                                     </div>
                                     <img src="./assets/images/deco-project-thumb.svg" alt=""
                                         class="project__item--deco" />
+                                    <img src="./assets/images/icon/project-deco-mobile.svg" alt=""
+                                        class="project__item--deco-mb" />
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col col-lg-6 col-12">
                                 <div class="project__item wow animate__zoomIn" data-wow-delay="0.5s">
                                     <div class="project__item--info">
                                         <h3 class="project__item--title">
@@ -418,9 +484,11 @@
                                     </div>
                                     <img src="./assets/images/deco-project-thumb.svg" alt=""
                                         class="project__item--deco" />
+                                    <img src="./assets/images/icon/project-deco-mobile.svg" alt=""
+                                        class="project__item--deco-mb" />
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col col-lg-6 col-12">
                                 <div class="project__item wow animate__zoomIn" data-wow-delay="0.5s">
                                     <div class="project__item--info">
                                         <h3 class="project__item--title">
@@ -437,6 +505,8 @@
                                     </div>
                                     <img src="./assets/images/deco-project-thumb.svg" alt=""
                                         class="project__item--deco" />
+                                    <img src="./assets/images/icon/project-deco-mobile.svg" alt=""
+                                        class="project__item--deco-mb" />
                                 </div>
                             </div>
                         </div>
@@ -540,7 +610,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="feedback__list-dots wow animate__zoomIn" data-wow-delay="1s">
+                    <div class="feedback__list-dots feedback__list-dots--feedback wow animate__zoomIn"
+                        data-wow-delay="1s">
                         <div class="feedback__dot"></div>
                         <div class="feedback__dot"></div>
                         <div class="feedback__dot feedback__dot--active"></div>
@@ -689,24 +760,32 @@
                         <a href="mailto:@interaction_arif" class="personal__link">@interaction_arif</a>
                     </div>
                     <section class="personal__banner">
-                        <div class="row row-cols-lg-3">
-                            <div class="col">
+                        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 flex-nowrap">
+                            <div class="col col-lg-4 col-md-6 col-12">
                                 <figure class="personal__img--wrap wow animate__zoomInUp">
                                     <img src="./assets/images/thumb-5.png" alt="" class="personal__img">
                                 </figure>
                             </div>
-                            <div class="col">
+                            <div class="col col-lg-4 col-md-6 col-12">
                                 <figure class="personal__img--wrap wow animate__zoomInUp">
                                     <img src="./assets/images/thumb-6.png" alt="" class="personal__img">
                                 </figure>
                             </div>
-                            <div class="col">
+                            <div class="col col-lg-4 col-md-6 col-12">
                                 <figure class="personal__img--wrap wow animate__zoomInUp">
                                     <img src="./assets/images/thumb-7.png" alt="" class="personal__img">
                                 </figure>
                             </div>
                         </div>
                     </section>
+                    <div class="feedback__list-dots feedback__list-dots--personal feedback__list-dots--mobile wow animate__zoomIn"
+                        data-wow-delay="1s">
+                        <div class="feedback__dot"></div>
+                        <div class="feedback__dot"></div>
+                        <div class="feedback__dot feedback__dot--active"></div>
+                        <div class="feedback__dot"></div>
+                        <div class="feedback__dot"></div>
+                    </div>
                 </section>
             </div>
         </section>
@@ -736,20 +815,24 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <section class="container__inner">
-                <div class="container__info">
+            <section class="container__inner container__inner--footer">
+                <a href="#" class="logo-footer">
+                    <img src="./assets/images/logo.png" alt="" class="logo__img-footer" />
+                </a>
+                <div class="container__info container__info--footer">
                     <a href="mailto:hi@arif.interactive">
-                        <div class="container__info--wrap-icon">
+                        <div class="container__info--wrap-icon container__info--wrap-icon-footer">
                             <img src="./assets/images/icon/email-heart.svg" alt="" class="container__info--icon" />
                         </div>
                     </a>
-                    <a href="mailto:hi@arif.interactive" class="container__info--link">hi@arif.interactive
+                    <a href="mailto:hi@arif.interactive"
+                        class="container__info--link container__info--link-footer">hi@arif.interactive
                     </a>
                 </div>
                 <a href="#" class="logo">
                     <img src="./assets/images/logo.png" alt="" class="logo__img" />
                 </a>
-                <nav class="navbar">
+                <nav class="navbar navbar__footer">
                     <ul class="navbar__list">
                         <li class="navbar__item">
                             <a href="#!" class="navbar__link" title="Projects">Projects</a>
