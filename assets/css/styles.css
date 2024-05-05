@@ -736,7 +736,7 @@ a {
 
 .project__item--img {
     position: absolute;
-    top: 0px;
+    /* top: 0px; */
     right: 0px;
     width: 246px;
     height: 187px;

@@ -313,9 +313,27 @@
         padding-right: 0;
         padding-left: 0;
     }
+
+    .project__item--deco-mb,
     .header__mobile--line {
         display: none;
     }
+
+    /* .project__item{
+        position: relative;
+    } */
+
+    /* .project__item--img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30px;
+        width: 246px;
+        height: 187px;
+        object-fit: cover;
+        z-index: 1;
+    } */
+
 }
 
 /* ======[MOBILE]======= */
